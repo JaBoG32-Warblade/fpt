@@ -175,14 +175,51 @@
                     %input#waypoint_name.form-control(type="text")
                     .dropdown-menu
                   .form-group
-                    %label.col-form-label(for="waypoint_position") Position:
-                    %input#waypoint_position.form-control
-                  .form-group
-                    %label.col-form-label(for="waypoint_altitude") Altitude:
-                    %input#waypoint_altitude.form-control
-                  .form-group
-                    %label.col-form-label(for="waypoint_tot") TOT:
-                    %input#waypoint_tot.form-control
+                    %label.col-form-label(for="waypoint_dme") DME:
+                    %input#waypoint_dme.form-control
+                  #pills-tabContent.tab-content
+                    #pills-dm.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="pills-dm-tab")
+                      .form-row
+                        .col.form-group
+                          %label.col-form-label(for="waypoint_position_lat") Latitude:
+                          .form-row
+                            %input#waypoint_position_lat.form-control.col-2(maxlength="1" placeholder="N")
+                            %input#waypoint_position_lat_deg.form-control.col-3(maxlength="2" placeholder="DD")
+                            %input#waypoint_position_lat_min.form-control.col-6(maxlength="6" placeholder="MM.MMM")
+                        .col.form-group
+                          %label.col-form-label(for="waypoint_position_lon") Longitude:
+                          .form-row
+                            %input#waypoint_position_lon.form-control.col-2(maxlength="1" placeholder="W")
+                            %input#waypoint_position_lon_deg.form-control.col-3(maxlength="3" placeholder="DDD")
+                            %input#waypoint_position_lon_min.form-control.col-6(maxlength="6" placeholder="MM.MMM")
+                    #pills-dms.tab-pane.fade(role="tabpanel" aria-labelledby="pills-dms-tab")
+                      .form-row
+                        .col.form-group
+                          %label.col-form-label(for="waypoint_position_dms_lat") Latitude:
+                          .form-row
+                            %input#waypoint_position_dms_lat.form-control.col-2(maxlength="1" placeholder="N")
+                            %input#waypoint_position_dms_lat_deg.form-control.col-3(maxlength="2" placeholder="DD")
+                            %input#waypoint_position_dms_lat_min.form-control.col-2(maxlength="2" placeholder="MM")
+                            %input#waypoint_position_dms_lat_sec.form-control.col-4(maxlength="6" placeholder="SS.SSS")
+                        .col.form-group
+                          %label.col-form-label(for="waypoint_position_dms_lon") Longitude:
+                          .form-row
+                            %input#waypoint_position_dms_lon.form-control.col-2(maxlength="1" placeholder="W")
+                            %input#waypoint_position_dms_lon_deg.form-control.col-3(maxlength="3" placeholder="DDD")
+                            %input#waypoint_position_dms_lon_min.form-control.col-2(maxlength="2" placeholder="MM")
+                            %input#waypoint_position_dms_lon_sec.form-control.col-4(maxlength="6" placeholder="SS.SSS")
+                  %ul#pills-tab.nav.nav-pills.nav-fill(role="tablist")
+                    %li.nav-item
+                      %a#pills-dm-tab.nav-link.active(href="#pills-dm" data-toggle="pill" role="tab" aria-controls="pills-dm" aria-selected="true") D°M'
+                    %li.nav-item
+                      %a#pills-dms-tab.nav-link(href="#pills-dms" data-toggle="pill" role="tab" aria-controls="pills-dms" aria-selected="false") D°M'S"
+                  .form-row
+                    .col.form-group
+                      %label.col-form-label(for="waypoint_altitude") Altitude:
+                      %input#waypoint_altitude.form-control
+                    .col.form-group
+                      %label.col-form-label(for="waypoint_tot") TOT:
+                      %input#waypoint_tot.form-control
                 .modal-footer
                   %button.btn.btn-secondary(data-dismiss="modal" type="button") Cancel
                   %button.btn.btn-primary(type="submit") Save
