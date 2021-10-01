@@ -4,7 +4,59 @@ defaults:
   tiger_1:
     iff: 101
   tiger_2:
-    iff: 102
+    iff: 102expendables:
+      - chaff: 120
+        flares: 0
+      - chaff: 110
+        flares: 10
+      - chaff: 100
+        flares: 20
+      - chaff: 90
+        flares: 30
+      - chaff: 80
+        flares: 40
+      - chaff: 70
+        flares: 50
+      - chaff: 60
+        flares: 60
+      - chaff: 50
+        flares: 70
+      - chaff: 40
+        flares: 80
+      - chaff: 30
+        flares: 90
+      - chaff: 20
+        flares: 100
+      - chaff: 10
+        flares: 110
+      - chaff: 0
+        flares: 120expendables:
+      - chaff: 120
+        flares: 0
+      - chaff: 110
+        flares: 10
+      - chaff: 100
+        flares: 20
+      - chaff: 90
+        flares: 30
+      - chaff: 80
+        flares: 40
+      - chaff: 70
+        flares: 50
+      - chaff: 60
+        flares: 60
+      - chaff: 50
+        flares: 70
+      - chaff: 40
+        flares: 80
+      - chaff: 30
+        flares: 90
+      - chaff: 20
+        flares: 100
+      - chaff: 10
+        flares: 110
+      - chaff: 0
+        flares: 120
   tiger_3:
     iff: 103
   tiger_4:
@@ -5935,7 +5987,7 @@ payload:
     name: AN/AAQ-28 LITENING
     short: TGP
     type: pod
-    weight: 661
+    weight: 492
   alq164:
     name: AN/ALQ-164 DECM Pod
     type: pod
@@ -6415,7 +6467,12 @@ payload:
     name: GBU-32(V)2/B
     short: G322B
     type: a2g
-    weight: 1030 
+    weight: 1030
+  asq228:
+    name: AN/ASQ-228 ATFLIR
+    short: TGP
+    type: pod
+    weight: 364
 loadout:
   a10:
     1: &a10station1
@@ -7378,6 +7435,7 @@ loadout:
       - weapon: aim7m
       - weapon: aim7mh
       - weapon: aaq28
+      - weapon: asq228
     5:
       - weapon: cbu99
       - weapon: cbu99
