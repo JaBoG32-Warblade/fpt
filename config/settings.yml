@@ -5458,7 +5458,7 @@ airframes:
       - chaff: 90
         fare: 0
     weight:
-      empty: 12783
+      empty: 13306
       fuel: 3170
       tol: 23000
   f18:
@@ -7182,7 +7182,7 @@ payload:
     name: AGM-114K
     short: AGM114K
     type: a2g
-    weight: 99
+    weight: 100
   ft230:
     name: Fuel tank 230 gal
     short: FT230
