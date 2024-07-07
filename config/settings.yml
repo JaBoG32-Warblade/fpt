@@ -9064,7 +9064,7 @@ payload:
     name: R + L Doors
     short: Door
     type: pylon
-    weight: 8
+    weight: 8 
 loadout:
   a10:
     1: &a10station1
